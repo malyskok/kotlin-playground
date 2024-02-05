@@ -30,6 +30,18 @@ class Item() {
         price = _price
         type = _type
     }
+
+    constructor(_name: String, _price: Double) : this() {
+        name = _name
+        price = _price
+        type = Type.NONE
+    }
+
+    override fun toString(): String {
+        return "Item(type=$type, name='$name', price=$price)"
+    }
+
+
 }
 
 fun main() {
